@@ -1,6 +1,6 @@
 # quo1
 =============
-This is a custom quote page using jQuery and build with Bootstrap 3.
+This is a custom quote page using jQuery and build with Bootstrap 3.  The production theme is MinamizePro, in this case.
 
 page-q.php is the WordPress template residing in the root folder of the theme.
 
