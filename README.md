@@ -4,6 +4,8 @@ This is a custom quote page using jQuery and build with Bootstrap 3.
 
 page-q.php is the WordPress template residing in the root folder of the theme.
 
+Throughout, 'jQuery' is used in place of '$' since there were php variables names with '$' prefix that were causing problems.
+
 It includes these behaviors:
 
 -*-The PRODUCT field conditions input to THREADED and BEVELED fields
