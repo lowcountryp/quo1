@@ -40,12 +40,12 @@
                    <div class="col-xs-15 col-md-15"> 
                       <blockquote>
                          <ul class="list-group">
-                            <li class="list-group-item list-group-item-success">Enter the quote information including shipping and contact information.</li>
-                            <li class="list-group-item list-group-item-info">Press the SUBMIT QUOTE button.</li>
-                            <li class="list-group-item list-group-item-warning">Your quote will be processed within 24 hours.</li>
+                            <li class="list-group-item list-group-item-success">Provide your quote information including shipping and contact information.</li>
+                            <li class="list-group-item list-group-item-info">Press the SUBMIT button.</li>
+                            <li class="list-group-item list-group-item-success">You will receive a copy of the quote, and we will respond ASAP.</li>
                          </ul> 
                          <div class="msgToUser text-center">
-                            <p>FOR ROUND: OD-1=OUTSIDE DIMENSION<br>FOR RECTANGULAR: OD-1=OUTSIDE DIMENSION OF HEIGHT, OD-2=OUTSIDE DIMENSION OF WIDTH</p>
+                            <p>SPECIFIC INSTRUCTION GO IN <br>THIS SECTION</p>
                          </div>
                       </blockquote>
                    </div>
@@ -116,12 +116,12 @@
                                   <div class="form-group col-xs-2 col-md-2">
                                      <select class="form-control col-xs-2 col-md-2 xOnPrdCh" id="prd_1" name="prd_" placeholder="Choose One:">
                                         <option value="na" selected="">Choose One:</option>
-                                        <option value="StructuralSquare">Structural Square</option>
-                                        <option value="StructuralRectangular">Structural Rectangular</option>
-                                        <option value="Pipe">Pipe</option>
-                                        <option value="MechanicalSquare">Mechanical Square</option>
-                                        <option value="MechanicalRectangular">Mechanical Rectangular</option>
-                                        <option value="MechanicalRound">Mechanical Round</option>
+                                        <option value="StructuralSquare">First Choice</option>
+                                        <option value="StructuralRectangular">Second Choice</option>
+                                        <option value="Pipe">COND</option>
+                                        <option value="MechanicalSquare">Fourth Choice</option>
+                                        <option value="MechanicalRectangular">Fifth Choice</option>
+                                        <option value="MechanicalRound">Sixth Choice</option>
                                         <option value="OtherProd">Other</option>
                                      </select>
                                   </div>
@@ -164,11 +164,11 @@
                                   <div class="form-group col-xs-2 col-md-2">
                                      <select name="thrdbevltype_1" class="form-control col-xs-2 col-md-2 xCondThBv" id="thrdbevltype_1">
                                         <option value="na" selected="">Choose One:</option>
-                                        <option value="TaperNPT">3/4" Taper/NPT</option>
-                                        <option value="JStyleColumnThread">J Style/Column Thread</option>
-                                        <option value="LayneCombo">Thread for Layne Combo</option>
-                                        <option value="MachineBevel">Machine Bevel</option>
-                                        <option value="MechanicalTorchBevel">Mechanical Torch Bevel</option>
+                                        <option value="TaperNPT">T1</option>
+                                        <option value="JStyleColumnThread">T2</option>
+                                        <option value="LayneCombo">T3</option>
+                                        <option value="MachineBevel">B1</option>
+                                        <option value="MechanicalTorchBevel">B2</option>
                                      </select>
                                   </div>
                                   <div class="col-xs-1">                                        
