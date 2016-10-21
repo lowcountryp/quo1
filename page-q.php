@@ -14,23 +14,23 @@
        <head>
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700' />
-          <link rel='stylesheet' href='http://localhost/lpt-i/wp-content/themes/Minamaze_Pro/bootstrap.css' />
-          <link rel='stylesheet' href='http://localhost/lpt-i/wp-content/themes/Minamaze_Pro/bootstrap-select.css' />
+          <link rel='stylesheet' href='http://mycompany.com/wp-content/themes/theme_Name/bootstrap.css' />
+          <link rel='stylesheet' href='http://mycompany.com/wp-content/themes/theme_Name/bootstrap-select.css' />
           <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' />         
-          <link rel='stylesheet' href='http://localhost/lpt-i/wp-content/themes/Minamaze_Pro/bootstrap_extend.css' />           
+          <link rel='stylesheet' href='http://mycompany.com/wp-content/themes/theme_Name/bootstrap_extend.css' />           
           <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
           <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>          
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-          <script src="http://localhost/lpt-i/wp-content/themes/Minamaze_Pro/bootstrap-select.js"></script>
+          <script src="http://mycompany.com/wp-content/themes/theme_Name/bootstrap-select.js"></script>
 <!--
             <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <script src="http://www.lpt-i.com/wp-content/themes/Minamaze_Pro/bootstrap-select.js"></script>
+            <script src="http://www.mycompany.com/wp-content/themes/theme_Name/bootstrap-select.js"></script>
             <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700' />
-            <link rel='stylesheet' href='http://www.lpt-i.com/wp-content/themes/Minamaze_Pro/bootstrap.css' />
-            <link rel='stylesheet' href='http://www.lpt-i.com/wp-content/themes/Minamaze_Pro/bootstrap-select.css' />
+            <link rel='stylesheet' href='http://www.mycompany.com/wp-content/themes/theme_Name/bootstrap.css' />
+            <link rel='stylesheet' href='http://www.mycompany.com/wp-content/themes/theme_Name/bootstrap-select.css' />
             <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' />         
-            <link rel='stylesheet' href='http://www.lpt-i.com/wp-content/themes/Minamaze_Pro/bootstrap_extend.css' />           
+            <link rel='stylesheet' href='http://www.mycompany.com/wp-content/themes/theme_Name/bootstrap_extend.css' />           
           -->
        </head>
        <body>
@@ -530,7 +530,7 @@
                           data: qData,
                           success: function (response) {
                               console.log(response);
-                              jQuery('.msgToUser').html('<a href="http://lpt-i.com">✓ SUBMITTED! Click HERE to return to the home page.</a>');
+                              jQuery('.msgToUser').html('<a href="http://mycompany.com">✓ SUBMITTED! Click HERE to return to the home page.</a>');
                           }});
                       //Disable the submit button
                       jQuery('#submit').prop('disabled', true);

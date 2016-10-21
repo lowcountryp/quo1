@@ -1,25 +1,25 @@
 <?php
 
-$phone = filter_input(INPUT_POST, 'qphone');
+$phone = filter_input(INPUT_POST, 'qPhone');
 $company = filter_input(INPUT_POST, 'qcompName');
 $company = strtoupper($company);
 
-$qaddr1 = filter_input(INPUT_POST, 'qaddr1');
-$qaddr2 = filter_input(INPUT_POST, 'qaddr2');
-$qcity = filter_input(INPUT_POST, 'qcity');
-$qstate = filter_input(INPUT_POST, 'qstate');
-$qzipcode = filter_input(INPUT_POST, 'qzipcode');
+$qaddr1 = filter_input(INPUT_POST, 'qAddr1');
+$qaddr2 = filter_input(INPUT_POST, 'qAddr2');
+$qcity = filter_input(INPUT_POST, 'qCity');
+$qstate = filter_input(INPUT_POST, 'qState');
+$qzipcode = filter_input(INPUT_POST, 'qZip');
 
 /* These are the variable that tell the subject of the email and where the email will be sent. */
 $emailSubject = 'REQUEST FOR QUOTE: ';
 $emailSubject .= filter_input(INPUT_POST, 'qcompName');
 
 /* These will gather what the user has typed into the field and were passed in $_POST. */
-$name = filter_input(INPUT_POST, 'fullName');
-$email = filter_input(INPUT_POST, 'qemail');
-$LvEmail = 'test@lpt-i.com';  //the Livingston email account to receive the quote
+$name = filter_input(INPUT_POST, 'qfullName');
+$email = filter_input(INPUT_POST, 'qEmail');
+$SalesProcEmail = 'test@domain_email.com';  //the MyCompany email account to receive the quote
 
-$comments = $_POST['qmessage'];
+$comments = $_POST['qMessage'];
 $quo = "Q_" . filter_input(INPUT_POST, 'hiddenQuoteID');
 
 $xc = filter_input(INPUT_POST, 'hLineCount'); //count of detail lines - used for looping
@@ -94,17 +94,14 @@ fclose($f2);
 
 $file_name = $file2;
 
-//$to = $LvEmail;
-$to = $LvEmail . "," . $email;
-$from = "From: Livingston Quote <livingt8@server.lpt-i.com>";
+//$to = $SalesProcEmail;
+$to = $SalesProcEmail . "," . $email;
+$from = "From: MyCompany Quote <mycompany@server.domain_email.com>";
 $subject = $emailSubject;
 $message = $body;
 $headers = "From: $from";
-$headers .= "cc: $LvEmail";
+$headers .= "cc: $SalesProcEmail";
 
-//$headers = "From: " . $LvEmail;
-//$headers .= "cc: " . $email;
-// boundary 
 $semi_rand = md5(time());
 $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
 
@@ -121,7 +118,7 @@ $data = fread($file, $file_size);
 fclose($file);
 
 $data = chunk_split(base64_encode($data));
-//$name = $files[$x]['name'];
+
 $message .= "Content-Type: {\"application/octet-stream\"};\n" . " name=\"$file2\"\n" .
      "Content-Disposition: attachment;\n" . " filename=\"$file2\"\n" .
      "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
@@ -129,7 +126,7 @@ $message .= "--{$mime_boundary}\n";
 
 // send
 $success = mail($to, $subject, $message, $headers);
-//$ok = mail($to, $subject, $message, $headers);
+
 if ($success) {
     echo "<p> $quo  message received from $email!</p>";
 } else {
